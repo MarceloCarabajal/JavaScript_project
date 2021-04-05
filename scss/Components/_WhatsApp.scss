@@ -1,0 +1,12 @@
+/* WHATSAPP */
+
+.image-wpp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.image-wpp:hover{
+  transform: scale(1.1);
+  transition: all 1s;
+}

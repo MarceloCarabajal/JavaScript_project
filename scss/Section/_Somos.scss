@@ -1,0 +1,17 @@
+/* QUIENES SOMOS */
+.section-somos {
+	font-weight: bold;
+	height: auto;
+	text-align: center;
+	margin: 200px 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	img {
+		margin-bottom: 50px;
+		border-radius: 10px;
+	}
+	.garantia-somos {
+		margin-top: 100px;
+	}
+}
