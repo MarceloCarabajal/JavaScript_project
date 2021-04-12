@@ -36,9 +36,8 @@
 
   <!-- Bootstrap 4.6-->
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -50,9 +49,39 @@
 
 <body>
 
+  <!-- prueba otro navbar bootstrap -->
+
+  <nav class="menu-nav navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="#">
+      <img src="Images/Logo/Nutriarg_logo.JPG" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#somos">¿Quiénes somos?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#productos">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Images/Lista precios/NUTRIARG-Lista_precios.png" target="_blank">Lista Precios</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- bootstrap navbar-->
 
-  <nav class="menu-nav navbar-expand-lg navbar-light bg-white w-100">
+  <!-- <nav class="menu-nav navbar-expand-lg navbar-light bg-white w-100">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,7 +117,7 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
 
 
@@ -111,7 +140,7 @@
 
 
   <!--Bootstrap carousel 4.6-->
-  <div class="container-fluid">
+  <div class="container-fluid" style= "padding-top:100px;"  >
     <div id="carouselExampleControls" class="carousel slide carousel-nutriarg" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -172,26 +201,28 @@
   <div class="container" id="somos">
     <section class="section-somos row">
 
-      <div class="col">
-        <img src="Images/Backgrounds/familiapag.jpg" alt="¿quiénes somos?">
+      <div class="col-sm-12 col-md-6">
+        <img src="Images/Backgrounds/familiapag.jpg" alt="¿quiénes somos?" class="img-fluid">
       </div>
 
-      <div class="col">
+      <div class="col-sm-12 col-md-6"> 
         <h2>¿QUIÉNES SOMOS?</h2>
         <p>
-          Somos una empresa enfocada en el bienestar y salud de las personas, como así también, el de
-          nuestro planeta, logrando una estabilidad completa y amigable con la vida y tambéin con el medioambiente.
+          Somos una empresa enfocada en el bienestar y salud de las personas y el de
+          nuestro planeta, logrando una estabilidad completa y amigable con la vida y también con el medioambiente.
         </p>
       </div>
 
       <div class="garantia-somos row w-100 d-flex justify-content-between">
         <div class="col">
-          <img src="images/Garantia/garantia-nutriarg.png" alt="garantia nutriarg" style="width: 200px;">
           <p>Mayor calidad.</p>
+          <img src="Images/Garantia/garantia-nutriarg.png" alt="garantia nutriarg" style="width: 200px;">
+          
         </div>
         <div class="col">
-          <img src="images/Envios/envios-nutriarg.png" alt="envios nutriarg" style="width: 200px;">
           <p>Envios a domicilio.</p>
+          <img src="Images/Envios/envios-nutriarg.png" alt="envios nutriarg" style="width: 200px;">
+          
         </div>
       </div>
 
@@ -200,9 +231,9 @@
 
 
 
-  <div class="container-fluid">
-    <section class="section-productos">
-      <div id="productos">
+  <div class="container-fluid products d-flex justify-content-center align-items-center flex-column" id="productos">
+    <section class="section-productos d-flex justify-content-center align-items-center flex-column">
+      <div >
         <h2>PRODUCTOS</h2>
       </div>
 
@@ -213,40 +244,40 @@
       <div class="contenedor-grid">
         <div class="box box-1">
           <a href="">Mix frutos secos</a>
-          <img src="images/Productos/mix-frutos-secos/mix-frutos-secos.png" alt="Aceites" style="width: 150px;">
+          <img src="Images/Productos/mix-frutos-secos/mix-frutos-secos.png" alt="Aceites" style="width: 100%;">
         </div>
         <div class="box box-2">
           <a href="">Frutos secos</a>
-          <img src="images/Productos/frutos secos/frutos-secos.png" alt="Frutos secos" style="width: 150px;">
+          <img src="Images/Productos/frutos secos/frutos-secos.png" alt="Frutos secos" style="width: 100%;">
         </div>
         <div class="box box-3">
           <a href="">Frutas deshidratadas</a>
-          <img src="images/Productos/frutas deshidratadas/fru-deshidratadas.png" alt="Frutas deshidratadas"
-            style="width: 150px;">
+          <img src="Images/Productos/frutas deshidratadas/fru-deshidratadas.png" alt="Frutas deshidratadas"
+            style="width: 100%;">
         </div>
         <div class="box box-4">
           <a href="">Cereales</a>
-          <img src="images/Productos/cereales/copos-maiz.png" alt="Cereales" style="width: 150px;">
+          <img src="Images/Productos/cereales/copos-maiz.png" alt="Cereales" style="width: 100%;">
         </div>
         <div class="box box-5">
           <a href="">Semillas</a>
-          <img src="images/Productos/semillas/semillas.png" alt="Semillas" style="width: 150px;">
+          <img src="Images/Productos/semillas/semillas.png" alt="Semillas" style="width: 100%;">
         </div>
         <div class="box box-6">
           <a href="">Legumbres</a>
-          <img src="images/Productos/legumbres/legumbres.png" alt="Legumbres" style="width: 150px;">
+          <img src="Images/Productos/legumbres/legumbres.png" alt="Legumbres" style="width: 100%;">
         </div>
         <div class="box box-7">
           <a href="">Apto Celíacos</a>
-          <img src="images/Productos/apto_celiacos/sin-tacc.png" alt="celiacos" style="width: 150px;">
+          <img src="Images/Productos/apto_celiacos/sin-tacc.png" alt="celiacos" style="width: 100%;">
         </div>
         <div class="box box-8">
           <a href="">Apto Diabéticos</a>
-          <img src="images/Productos/apto_diabeticos/sinazucar.png" alt="diabeticos" style="width: 150px;">
+          <img src="Images/Productos/apto_diabeticos/sinazucar.png" alt="diabeticos" style="width: 100%;">
         </div>
         <div class="box box-9">
           <a href="">Aceites</a>
-          <img src="images/Productos/aceites/aceite.png" alt="aceites" style="width: 150px;">
+          <img src="Images/Productos/aceites/aceite.png" alt="aceites" style="width: 100%;">
         </div>
       </div>
     </section>
@@ -286,41 +317,54 @@
         <a href="https://www.instagram.com/nutriarg.dietetica" target="_blank">Instagram</a>
       </p>
       <p>
-        <a href="https://www.facebook.com/Nutriarg-Diet%C3%A9tica-100920131928633" target="_blank">Facebook</a>
+        <a href="https://www.facebook.com/nutriarg.dietetica" target="_blank">Facebook</a>
       </p>
       <p>E-mail: info@nutriarg.com</p>
     </footer>
   </div> -->
 
   <!-- Bootstrap Contacto -->
-  <form class="container row footer">
-    <div id="contacto" class="col-12">
+  <form class="container-fluid footer" id="contacto">
+    <div>
       <h2 class="d-flex justify-content-center">CONTACTO</h2>
     </div>
-    <p>
-      Escriba su consulta y obtendrá una respuesta dentro de las 24h
-    </p>
-    <div class="col-md-12">
+    <p class="p1 text-center mt-4">
+      Dejanos tu comentario/consulta
+    </p>  
+    <div class="form-group">
       <label for="inputname4" class="form-label">Nombre</label>
-      <input type="Nombre" class="form-control" id="inputname4">
+      <input type="text" class="form-control" id="inputname4">
     </div>
-    <div class="row">
-      <div class="col-md-6">
+    <div class="row form-group">
+      <div class="col-12 form-group">
         <label for="inputEmail4" class="form-label">Email</label>
         <input type="text" class="form-control" id="inputEmail4">
       </div>
-      <div class="col-md-6">   
+      <div class="col-6 form-group">   
         <label for="inputTel4" class="form-label">Teléfono</label>
         <input type="text" class="form-control" id="inputTel4">
       </div>
     </div>
-    
-    <div class="col-md-12">
-      <label for="inputMensaje" class="form-label">Mensaje</label>
-      <input type="text" class="form-control" id="inputMensaje" placeholder="Escriba aquí">
+    <div class="form-floating mt-4 form-group">
+      <textarea class="form-control" placeholder="Dejanos tu consulta" id="floatingTextarea2" style="min-height: 200px; resize: none;"></textarea>
+      <label for="floatingTextarea2">Comentario/Consulta</label>
     </div>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">Enviar</button>
+    <div class="button-enviar form-group">
+      <button type="submit" class="btn btn-light">Enviar</button>
+    </div>
+    <div class="mt-5 text-center">
+      <p>Nuestras oficinas: Tigre, Buenos Aires, Argentina</p>
+      <p>Teléfono: (011) 1526347325</p>
+      <p>Seguinos en nuestras Redes sociales:</p>
+      <div class="flex-row">
+        <a href="https://www.instagram.com/nutriarg.dietetica" target="_blank">
+          <img src="Images/Social/instagram-png.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/nutriarg.dietetica" target="_blank">
+          <img src="Images/Social/facebook-png.png" alt="Facebook">
+        </a>
+      </div>
+      <p class="pt-3">E-mail: info@nutriarg.com</p>
     </div>
   </form>
 
@@ -328,28 +372,17 @@
 
   <p class="image-wpp">
     <a href="https://api.whatsapp.com/send?phone=541126347325&text=Hola" target="_blank">
-      <img src="images/Whatsapp/Whatsapp.png" alt="wpp">
+      <img src="Images/Whatsapp/Whatsapp.png" alt="wpp">
     </a>
   </p>
 
 
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> -->
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
-  </script>
+   <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    
 
 </body>
 
