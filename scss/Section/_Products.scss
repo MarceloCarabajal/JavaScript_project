@@ -13,11 +13,8 @@
         border-radius: 4px;
         height: 100%;
         width: 80%;
-        
-        background-image: url(../Images/Backgrounds/fondos-transpare-2);
-        background-size: cover;
         p {
-            margin: 30px;
+            margin-top: 30px;
         }
         .contenedor-grid {
             width: 100%;
@@ -31,7 +28,7 @@
             grid-row-gap: 20px;
         
             div {
-                margin-top: 30px;
+                margin-top: 15px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
