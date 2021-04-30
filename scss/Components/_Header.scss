@@ -1,0 +1,83 @@
+/*NAVBAR*/
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../Images/Backgrounds/fondo-nutri-transp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header::before {
+    content: '';
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(255,255,255, .1), rgba(34,40,49,1));
+}
+
+.bg-light {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+}
+
+
+.navlist a{
+    color: black!important;
+    font-size: 17px;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navlist a:hover{
+    background-color:#76D7C4;
+}
+
+.text-header {
+	min-height: 100vh;
+	color: black;
+	font-weight: bold;
+    text-align: center;
+}
+
+.text-header h2 {
+    color: black;
+    font-weight: bold;
+}
+.text-header p {
+    margin-top: 6%;
+}
+
+.text-header h2:hover,
+.text-header p:hover {
+    transform: scale(1.03);
+    transition: all 1s;
+}
+
+.text-header span{
+    letter-spacing: 10px;
+    margin-left: 4px;
+    font-size: 1em;
+    color: #0E6251;
+
+}
+
+.btn-yo {
+    margin-top: 3%;
+    color: #f4f4f4;
+    background-color:  #0B5345;
+}
+
+.btn-yo:hover{
+    color: black;
+    background-color: #76D7C4;
+    font-weight: bold;
+    transform: scale(1.03);
+    transition: all 0.3s;
+}

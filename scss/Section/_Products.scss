@@ -20,8 +20,6 @@
             margin: 30px;
         }
         .contenedor-grid {
-            // margin-top: 15px;
-            // margin-bottom: 100px;
             width: 100%;
             font-size: 20px;        
             display: grid;
@@ -46,9 +44,12 @@
             .box {
                 border-radius: 20px;
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.03);
                     transition: all 1s;
                 }
+            img {
+                width: 100%;
+            }
             }
         }
     
@@ -67,7 +68,6 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                // position: relative;
                 left: 0px;
                 grid-template-columns: 33.33% 33.33%;
                 
@@ -77,23 +77,6 @@
 
 }
 
-// @media only screen and (max-width: 576px) {
-//     .products {
-//         .section-productos {
-//             .contenedor-grid {
-//                 margin-top: 10px;
-//                 width: 90%;
-//                 display: flex;
-//                 flex-direction: column;
-//                 justify-content: center;
-//                 align-items: center;
-//                 position: relative;
-//                 left: 0px;
-//             }
-//         }
-//     }
-
-// }
 
 
 

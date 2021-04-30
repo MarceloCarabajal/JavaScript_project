@@ -15,27 +15,85 @@ body {
 }
 
 /*NAVBAR*/
-.menu-nav {
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../Images/Backgrounds/fondo-nutri-transp.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header::before {
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), #222831);
+}
+
+.bg-light {
   position: fixed;
   z-index: 50;
   width: 100%;
 }
-/* HOME */
-.section-home {
-  height: auto;
-  padding: 10%;
+
+.navlist a {
+  color: black !important;
+  font-size: 17px;
+  padding: 10px 15px;
   text-align: center;
   font-weight: bold;
-  background-image: url(../Images/Backgrounds/fondos-transpare-2.png);
-  background-size: cover;
 }
-.section-home h1 {
-  margin-top: 60px;
-  font-size: 30px;
+
+.navlist a:hover {
+  background-color: #76D7C4;
 }
-.section-home p {
-  margin-top: 30px;
-  font-size: 20px;
+
+.text-header {
+  min-height: 100vh;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-header h2 {
+  color: black;
+  font-weight: bold;
+}
+
+.text-header p {
+  margin-top: 6%;
+}
+
+.text-header h2:hover,
+.text-header p:hover {
+  transform: scale(1.03);
+  transition: all 1s;
+}
+
+.text-header span {
+  letter-spacing: 10px;
+  margin-left: 4px;
+  font-size: 1em;
+  color: #0E6251;
+}
+
+.btn-yo {
+  margin-top: 3%;
+  color: #f4f4f4;
+  background-color: #0B5345;
+}
+
+.btn-yo:hover {
+  color: black;
+  background-color: #76D7C4;
+  font-weight: bold;
+  transform: scale(1.03);
+  transition: all 0.3s;
 }
 
 /* QUIENES SOMOS */
@@ -55,6 +113,9 @@ body {
 }
 .section-somos .garantia-somos {
   margin-top: 30px;
+}
+.section-somos .garantia-somos img {
+  width: 200px;
 }
 
 /* PRODUCTOS */
@@ -99,8 +160,11 @@ body {
   border-radius: 20px;
 }
 .products .section-productos .contenedor-grid .box:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   transition: all 1s;
+}
+.products .section-productos .contenedor-grid .box img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -119,8 +183,9 @@ body {
 .footer {
   margin: 10% 0%;
   padding: 5% 20%;
-  color: white;
-  background-color: black;
+  font-weight: bold;
+  color: black;
+  background-color: #45B39D;
 }
 .footer .button-enviar {
   margin-top: 20px;
