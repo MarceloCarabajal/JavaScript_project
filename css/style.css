@@ -15,6 +15,47 @@ body {
 }
 
 /*HEADER + NAVBAR*/
+#barcontainer {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+}
+
+#barcontainer #a2 {
+  margin-top: 0.8rem;
+  width: 3rem;
+}
+
+@media (min-width: 993px) {
+  #barcontainer {
+    display: none;
+  }
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.icon {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  cursor: pointer;
+}
+
+.icon {
+  stroke: #000000;
+  opacity: 1;
+}
+
 .header {
   width: 100%;
   min-height: 100vh;
@@ -180,7 +221,7 @@ body {
 /* FOOTER */
 .footer {
   margin: 10% 0%;
-  padding: 14% 20% 10% 20%;
+  padding: 15% 20% 10% 20%;
   font-weight: bold;
   color: black;
   background-color: #45B39D;
