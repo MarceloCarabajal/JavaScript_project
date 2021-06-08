@@ -78,7 +78,7 @@ const persona2 = new persona ("nutriarg", 2011);
 
 //Suma de totales
 
-const productos = [
+const sumaProd = [
     {id: 1, nombre: "Almendra", precio: 1367, descripcion: "1 kg"},
     {id: 1, nombre: "Avellana", precio: 2796, descripcion: "1 kg"},
     {id: 1, nombre: "Nuez extra light", precio: 1447, descripcion: "1 kg"},
@@ -87,7 +87,7 @@ const productos = [
 
 function agregarItem (id, nombre, precio, descripcion) {
     const item = (id, nombre, precio, descripcion);
-    productos.push (item);
+    sumaProd.push (item);
 }
 
 const rta = +prompt ("ingrese el precio que quiere gastar");
