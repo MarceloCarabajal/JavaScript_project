@@ -1,50 +1,50 @@
 let productos = [
     {
         id: 0,
-        nombre: 'almendra',
-        imagen: 'image',
+        nombre: 'Almendra',
+        imagen: `Images/Productos_categorias/frutos_secos/almendra-guara/almendraguara2.jpg`,
         descripcion:'almendra guara',
     },
 
     {
         id: 1,
-        nombre: 'nuez',
+        nombre: 'Nuez',
         imagen: 'image',
         descripcion: 'nuez dorada',
     },
     {
         id: 2,
-        nombre: 'nuez extra light',
+        nombre: 'Nuez extra light',
         imagen: 'image',
         descripcion: 'nuez extra light',
     },
     {
         id: 3,
-        nombre: 'caju',
+        nombre: 'Castaña de cajú',
         imagen: 'image',
         descripcion: 'castaña de caju',
     },
     {
         id: 4,
-        nombre: 'pistacho',
+        nombre: 'Pistacho',
         imagen: 'image',
         descripcion: 'pistacho con cascara',
     },
     {
         id: 5,
-        nombre: 'mani sin sal',
+        nombre: 'Maní sin sal',
         imagen: 'image',
         descripcion: 'mani tostado sin sal',
     },
     {
         id: 6,
-        nombre: 'mani con sal',
+        nombre: 'Maní con sal',
         imagen: 'image',
         descripcion: 'mani tostado con sal',
     },
     {
         id: 7,
-        nombre: 'avellana',
+        nombre: 'Avellana',
         imagen: 'image',
         descripcion: 'avellana pelada',
     }
@@ -55,11 +55,11 @@ const listaProd = document.getElementById('productos')
 productos.forEach(prod => {
     let card = document.createElement('div')
     card.innerHTML = `<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="${prod.imagen}" class="card-img-top" alt="${prod.descripcion}">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">${prod.nombre}</h5>
+      <p class="card-text">${prod.descripcion}</p>
+      <a href="#" class="btn btn-primary">Comprar</a>
     </div>
   </div>`
   listaProd.appendChild(card)
@@ -96,3 +96,7 @@ const precioProductos = productos.map (el => el.precio);
 
 let total = precioProductos.reduce((prev,next) => prev + next);
 console.log("el total gastado es: $" + total);
+
+//Storage y JSON
+
+console.dir(document.head)
