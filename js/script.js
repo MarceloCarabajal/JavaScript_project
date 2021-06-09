@@ -5,57 +5,55 @@ let productos = [
         imagen: `Images/Productos_categorias/frutos_secos/almendra-guara/almendraguara2.jpg`,
         descripcion:'almendra guara',
     },
-
-    {
-        id: 1,
-        nombre: 'Nuez',
-        imagen: 'image',
-        descripcion: 'nuez dorada',
-    },
     {
         id: 2,
-        nombre: 'Nuez extra light',
-        imagen: 'image',
-        descripcion: 'nuez extra light',
+        nombre: 'Avellana',
+        imagen: 'Images/Productos_categorias/frutos_secos/avellana/avellana.png',
+        descripcion: 'avellana pelada',
     },
     {
         id: 3,
-        nombre: 'Castaña de cajú',
-        imagen: 'image',
-        descripcion: 'castaña de caju',
+        nombre: 'Nuez',
+        imagen: `Images/Productos_categorias/frutos_secos/nuez-dorada/nuez-dorada.png`,
+        descripcion: 'nuez dorada',
     },
     {
         id: 4,
-        nombre: 'Pistacho',
-        imagen: 'image',
-        descripcion: 'pistacho con cascara',
+        nombre: 'Nuez extra light',
+        imagen: 'Images/Productos_categorias/frutos_secos/nuez-extra-light/nuez-extra-light.jpg',
+        descripcion: 'nuez extra light',
     },
     {
         id: 5,
-        nombre: 'Maní sin sal',
-        imagen: 'image',
-        descripcion: 'mani tostado sin sal',
+        nombre: 'Castaña de cajú',
+        imagen: 'Images/Productos_categorias/frutos_secos/caju/caju-tostado.png',
+        descripcion: 'castaña de caju',
     },
     {
         id: 6,
-        nombre: 'Maní con sal',
-        imagen: 'image',
-        descripcion: 'mani tostado con sal',
+        nombre: 'Pistacho',
+        imagen: 'Images/Productos_categorias/frutos_secos/pistacho/pistacho.jpg',
+        descripcion: 'pistacho con cascara',
     },
     {
         id: 7,
-        nombre: 'Avellana',
-        imagen: 'image',
-        descripcion: 'avellana pelada',
-    }
-]
+        nombre: 'Maní sin sal',
+        imagen: 'Images/Productos_categorias/frutos_secos/mani-tostado/mani-tostado.jpg',
+        descripcion: 'mani tostado sin sal',
+    },
+    {
+        id: 8,
+        nombre: 'Maní con sal',
+        imagen: 'Images/Productos_categorias/frutos_secos/mani-tostado/mani-tostado.jpg',
+        descripcion: 'mani tostado con sal',
+    }]
 
 const listaProd = document.getElementById('productos')
 
 productos.forEach(prod => {
     let card = document.createElement('div')
     card.innerHTML = `<div class="card" style="width: 18rem;">
-    <img src="${prod.imagen}" class="card-img-top" alt="${prod.descripcion}">
+    <img src="${prod.imagen}" class="card-img-top" alt="${prod.nombre}">
     <div class="card-body">
       <h5 class="card-title">${prod.nombre}</h5>
       <p class="card-text">${prod.descripcion}</p>
@@ -93,10 +91,7 @@ function agregarItem (id, nombre, precio, descripcion) {
 const rta = +prompt ("ingrese el precio que quiere gastar");
 
 const precioProductos = productos.map (el => el.precio);
+parseFloat(precioProductos);
 
 let total = precioProductos.reduce((prev,next) => prev + next);
-console.log("el total gastado es: $" + total);
-
-//Storage y JSON
-
-console.dir(document.head)
+console.log(`el total gastado es: $ ${total}`);
