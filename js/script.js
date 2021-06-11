@@ -57,7 +57,9 @@ productos.forEach(prod => {
     <div class="card-body">
       <h5 class="card-title">${prod.nombre}</h5>
       <p class="card-text">${prod.descripcion}</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
+      <a href="#" class="btn btn-primary" id="btnAgregar">Agregar al carrito</a>
+      <label>Agregar cantidad (Kg)</label>
+      <input id = "cantidad"   type="number">
     </div>
   </div>`
   listaProd.appendChild(card)
@@ -74,7 +76,7 @@ const persona2 = new persona ("nutriarg", 2011);
 
 
 
-//Suma de totales
+//Suma de totales - pendiente para enlazar con el resto
 
 const sumaProd = [
     {id: 1, nombre: "Almendra", precio: 1367, descripcion: "1 kg"},
@@ -88,10 +90,23 @@ function agregarItem (id, nombre, precio, descripcion) {
     sumaProd.push (item);
 }
 
-const rta = +prompt ("ingrese el precio que quiere gastar");
+// const rta = +prompt ("ingrese el precio que quiere gastar");
 
-const precioProductos = productos.map (el => el.precio);
-parseFloat(precioProductos);
+// const precioProductos = productos.map (el => el.precio);
+// parseFloat(precioProductos);
 
-let total = precioProductos.reduce((prev,next) => prev + next);
-console.log(`el total gastado es: $ ${total}`);
+// let total = precioProductos.reduce((prev,next) => prev + next);
+// console.log(`el total gastado es: $ ${total}`);
+
+
+
+//mouseEvent (Como hago para agregar en el alert el producto y la cantidad, tampoco puedo agregar con otro prod
+//que no sea el primero)
+let boton = document.getElementById("btnAgregar");
+boton.onclick = () => {alert(`Se agrega al carrito`)};
+boton.onmousemove = () => {console.log("Move")}
+
+//keyBoardEvent
+
+let input1  = document.getElementById("cantidad");
+input1.onkeydown = () => {console.log("keyDown")};
