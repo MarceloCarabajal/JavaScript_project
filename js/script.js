@@ -71,11 +71,12 @@ const listaProd = document.getElementById('productos')
 productos.forEach(prod => {
     let card = document.createElement('div')
     card.classList.add('col')
-    card.innerHTML = `<div class="card m-1 h-100" style="width: 19rem;">
+    card.innerHTML = `<div class="card m-1 " style="width: 19rem;">
     <img src="${prod.imagen}" class="card-img-top" alt="${prod.nombre}">
     <div class="card-body">
       <h5 class="card-title">${prod.nombre}</h5>
-      <p class="card-text">${prod.descripcion}</p>
+      <div class="btn btn-primary" id="flip">Click para ver más</div>
+      <p class="card-text" id="desc">${prod.descripcion}</p>
       <h4>Precio: $${prod.precio}</h4>
       <a href="#" class="btn btn-success d-flex justify-content-" id="btnAgregar${prod.id}">Agregar al carrito</a>
       <label>Agregar cantidad (Kg)</label>
@@ -131,26 +132,13 @@ $(document).ready(function(){
     console.log('funcionando');
 })
 
-//Uso de Append
-let producto   = { id: 1,  nombre: "Arroz", precio: 125 };
-//Es posible usar plantillas de texto en el parámetro.
-$("#app").append(`<div><h3> ID: ${producto.id}</h3>
-                  <p>  Producto: ${producto.nombre}</p>
-                  <b> $ ${producto.precio}</b></div>`);
-
-//Otro ejemplo Append
-const productos1 = [{ id: 1,  nombre: "Arroz", precio: 125 },
-{  id: 2,  nombre: "Fideo", precio: 70 },
-{  id: 3,  nombre: "Pan"  , precio: 50},
-{  id: 4,  nombre: "Flan" , precio: 100}];
-
-for (const producto of productos1) {
-    $("#app").append(`<div><h3> ID: ${producto.id}</h3>
-    <p>  Producto: ${producto.nombre}</p>
-    <b> $ ${producto.precio}</b></div>`);
-}
+$("#desc").css("display", "none");   
 
 
+$("#flip").click(function(){
+    $("#desc").toggle()
+
+})
 
 
 
