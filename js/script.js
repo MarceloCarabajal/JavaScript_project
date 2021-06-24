@@ -75,10 +75,10 @@ productos.forEach(prod => {
     <img src="${prod.imagen}" class="card-img-top" alt="${prod.nombre}">
     <div class="card-body">
       <h5 class="card-title">${prod.nombre}</h5>
-      <div class="btn btn-primary" id="flip">Click para ver más</div>
-      <p class="card-text" id="desc">${prod.descripcion}</p>
+      <a href = "#descripcion" id="flip">Descripción</a>
+      <p class="card-text" id="descripcion" style = "display:none">${prod.descripcion}</p>
       <h4>Precio: $${prod.precio}</h4>
-      <a href="#" class="btn btn-success d-flex justify-content-" id="btnAgregar${prod.id}">Agregar al carrito</a>
+      <a href="#" class="btn btn-primary d-flex justify-content-" id="btnAgregar${prod.id}">Agregar al carrito</a>
       <label>Agregar cantidad (Kg)</label>
       <input id = "cant-${prod.id}"   type="number">
     </div>
@@ -87,6 +87,7 @@ productos.forEach(prod => {
   let boton = document.getElementById("btnAgregar"+ prod.id)
   let cantidad = parseFloat()
   cantidad = document.getElementById("cant-" + prod.id)
+
 
   boton.addEventListener("click", () => {
     prod.cantidad= cantidad.value // falta ver como agregar cantidades a un producto que ya se agrego antes y lo sume
@@ -132,12 +133,11 @@ $(document).ready(function(){
     console.log('funcionando');
 })
 
-$("#desc").css("display", "none");   
+// $("#desc").css("display", "none");   
 
 
 $("#flip").click(function(){
-    $("#desc").toggle()
-
+    $("#descripcion").toggle();
 })
 
 
