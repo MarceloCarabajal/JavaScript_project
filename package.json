@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarceloCarabajal/Nutriarg_JS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MarceloCarabajal/Nutriarg_JS/issues"
+  },
+  "homepage": "https://github.com/MarceloCarabajal/Nutriarg_JS#readme",
   "description": ""
 }

@@ -75,8 +75,8 @@ productos.forEach(prod => {
     <img src="${prod.imagen}" class="card-img-top" alt="${prod.nombre}">
     <div class="card-body">
       <h5 class="card-title">${prod.nombre}</h5>
-      <a href = "#descripcion" id="flip">Descripción</a>
-      <p class="card-text" id="descripcion" style = "display:none">${prod.descripcion}</p>
+      <a href = "#descripcion" id="flip${prod.id}">Descripción</a>
+      <p class="card-text id="descrip${prod.id}" style = "display:none">${prod.descripcion}</p>
       <h4>Precio: $${prod.precio}</h4>
       <a href="#" class="btn btn-primary d-flex justify-content-" id="btnAgregar${prod.id}">Agregar al carrito</a>
       <label>Agregar cantidad (Kg)</label>
@@ -93,6 +93,19 @@ productos.forEach(prod => {
     prod.cantidad= cantidad.value // falta ver como agregar cantidades a un producto que ya se agrego antes y lo sume
     agregarCarrito(prod)   
     })
+
+    // $(`#flip${prod.id}`).click(function(){
+    //     $(this).parent().next().toggle();
+    //     // $(`#descrip${prod.id}`).toggle();
+    //     console.log("prueba");
+    // })
+   
+    $(`#flip${prod.id}`).on('click',function(e){
+        $(`#descrip${prod.id}`).parent().next().toggle();
+        e.preventDefault();
+        console.log("prueba");
+    });
+
 })
 
 //Usuario: ver y agregar a la pantalla home
@@ -136,10 +149,35 @@ $(document).ready(function(){
 // $("#desc").css("display", "none");   
 
 
-$("#flip").click(function(){
-    $("#descripcion").toggle();
-})
 
 
 
+$(document).ready(function(){
+    $('.alternar-respuesta').on('click',function(e){
+        $(this).parent().next().toggle();
+        e.preventDefault();
+    });
+    $('#alternar-todo').on('click',function(e){
+        $('.respuesta').toggle('slow');
+        e.preventDefault();
+    });
+});
 
+
+
+$('.flip').on('click',function(e){
+    $(this).parent().next().toggle();
+    e.preventDefault();
+});
+
+
+$(document).ready(function(){
+        $('.alternar-respuesta').on('click',function(e){
+            $(this).parent().next().toggle();
+            e.preventDefault();
+        });
+        $('#alternar-todo').on('click',function(e){
+            $('.respuesta').toggle('slow');
+            e.preventDefault();
+        });
+    });
