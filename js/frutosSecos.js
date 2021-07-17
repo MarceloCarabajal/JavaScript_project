@@ -1,4 +1,4 @@
-
+let cantidad = 0;
 
 let productos = [
     {
@@ -62,8 +62,10 @@ let productos = [
 let carrito = []
 
 function agregarCarrito(prod) {
-    carrito.push(prod)
-    console.log(`se agregó al carrito el producto con ID: ${prod.id}`)
+    /* carrito.push(prod)
+    console.log(`se agregó al carrito el producto con ID: ${prod.id}`) */
+    let cart = document.getElementById('conteo');
+    cart.innerHTML= `<span id="carrito"> ${prod}</span>` 
 }
 
 const listaProd = document.getElementById('productos')
@@ -80,18 +82,19 @@ productos.forEach(prod => {
       <h4>Precio: $${prod.precio}</h4>
       <a href="#" class="btn btn-primary d-flex justify-content-" id="btnAgregar${prod.id}">Agregar al carrito</a>
       <label>Agregar cantidad (Kg)</label>
-      <input id = "cant-${prod.id}"   type="number">
+      <input id = "cantidad"   type="number">
     </div>
   </div>`
   listaProd.appendChild(card)
   let boton = document.getElementById("btnAgregar"+ prod.id)
-  let cantidad = parseFloat()
+  /* let cantidad = parseFloat() */
   cantidad = document.getElementById("cant-" + prod.id)
 
 
   boton.addEventListener("click", () => {
-    prod.cantidad= cantidad.value // falta ver como agregar cantidades a un producto que ya se agrego antes y lo sume
-    agregarCarrito(prod)   
+    
+    cantidad= document.getElementById('cantidad').value;
+    agregarCarrito(cantidad)   
     })
 
     // $(`#flip${prod.id}`).click(function(){

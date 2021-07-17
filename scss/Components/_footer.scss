@@ -1,16 +1,21 @@
 /* FOOTER */
 .footer {
-    margin: 10% 0%;
-    padding: 15% 20% 10% 20%;
-    
-    font-weight: bold;
-    color: black;
-    background-color: #038b70;
-    .button-enviar{
-        margin-top: 20px;
-        }    
-    
-            
+    margin: 0% 0%;
+    padding: 10% 20% 10% 20%;
+    color: #f0f0f0;
+    background-color: #000000; 
+    button {
+        font-size: 20px;
+        width: 100%;
+        background-color: #069b7d;
+        color: #000000;
     }
+    button.btn:hover{
+    color: black;
+    background-color: #0dcea7;
+    
+    }
+}
+
 
     

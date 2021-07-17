@@ -97,10 +97,10 @@
 }
 .text-header p {
     margin-top: 6%;
+    font-size: 160%;
 }
 
-.text-header h2:hover,
-.text-header p:hover {
+.text-header h2:hover,{
     transform: scale(1.03);
     transition: all 1s;
 }
