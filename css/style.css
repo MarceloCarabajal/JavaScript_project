@@ -359,4 +359,76 @@ body {
   width: 100%;
 }
 
+/* Mix Frutos Secos*/
+.headerMixFru {
+  background-color: whitesmoke;
+  z-index: 100;
+}
+
+.ulMixFru {
+  background-color: whitesmoke;
+  color: #006853;
+}
+.ulMixFru .nav-link {
+  background-color: black;
+}
+
+.nav-link {
+  background-color: black;
+  color: #006853;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #006853;
+  color: white;
+}
+
+.nav-pills .nav-link {
+  color: gray;
+}
+.nav-pills .nav-link:hover {
+  color: #c9c9c9;
+}
+
+.bodyMixFrutos {
+  background-color: black;
+  color: #fff;
+}
+
+.card-mixFru {
+  background-color: #006853;
+  color: #fff;
+}
+
+.card-mixFru img {
+  border-radius: 50%;
+}
+
+.descriptionMix {
+  height: 25px;
+  overflow: hidden;
+  transition: height 0.3s ease-in 0.3s;
+}
+
+.descriptionMix:hover {
+  height: auto;
+}
+
+.btn-agregarCarr {
+  width: 100%;
+  background-color: black;
+  border-color: white;
+}
+
+.btn-agregarCarr:hover {
+  background-color: #212121;
+  color: #f0f0f0;
+  border-color: #696969;
+}
+
+.footer-mixFru {
+  background-color: #00685369;
+  font-size: 0.8rem;
+}
+
 /*# sourceMappingURL=style.css.map */
