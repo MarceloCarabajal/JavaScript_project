@@ -290,7 +290,7 @@ body {
 }
 
 .form-control {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
 }
@@ -365,6 +365,11 @@ body {
   z-index: 100;
 }
 
+.hide, .remove {
+  z-index: 100;
+  display: none;
+}
+
 .ulMixFru {
   background-color: whitesmoke;
   color: #006853;
@@ -373,7 +378,7 @@ body {
   background-color: black;
 }
 
-.nav-link {
+.nav-mixFru {
   background-color: black;
   color: #006853;
 }
@@ -428,7 +433,35 @@ body {
 
 .footer-mixFru {
   background-color: #00685369;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+}
+
+.carrito-mixFru {
+  min-height: 30vh;
+  max-width: 1000px;
+  margin-bottom: 0 auto;
+  width: 100%;
+}
+
+.table__productos s {
+  display: flex;
+}
+
+.table__productos > img {
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+.table__cantidad > input {
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
